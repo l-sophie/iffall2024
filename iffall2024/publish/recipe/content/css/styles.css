@@ -1,0 +1,82 @@
+html {
+    font-size: 18px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    margin-left: 5%;
+    background-color: #FFF3E0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .4em;
+    color: #ED7014;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: .4em;
+    color: #FCAE1E;
+}
+
+p {
+    margin-top: 0;
+}
+
+section.Ingredients
+
+.Ingredients {
+    border: 2px solid #ED7014;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.Ingredients h2 {
+    margin-bottom: 2.5%;
+}
+
+p.title {
+    margin-bottom: -2%;
+    margin-top: 2.5%;
+    font-weight: 500;
+}
+
+p.list {
+    margin-left: 5%;
+}
+
+section.Instructions
+
+.Instructions h2 {
+    margin-bottom: 2.5%;
+}
+
+p.body {
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section.SampleImagery
+
+.SampleImagery h2 {
+    margin-bottom: 2.5%;
+}
+
+section.RecipeWebsites
+
+p.link {
+    margin-bottom: -2.5%;
+}
+
+section.NonRecipeWebsites
+
+p.link {
+    margin-bottom: -2.5%;
+}
