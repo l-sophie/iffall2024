@@ -1,0 +1,250 @@
+html {
+    font-family: futura;
+    font-size: 12pt;
+    background-color: #F6ECE0;
+}
+
+header {
+    background-image: url(../images/plantbackdrop.jpeg);
+    background-size: cover;
+    padding: 150px 0 150px 0;
+}
+
+header h1 {
+    font-size: 150pt;
+    font-family: manofa;
+    font-weight: 500;
+    text-align: center;
+    line-height: 200px;
+    color: rgb(164, 34, 34);
+}
+
+h2 {
+    font-family: manofa;
+    font-size: 38pt;
+    text-align: center;
+    opacity: 100%;
+    color: rgb(164, 34, 34);
+}
+
+h3 {
+    font-size: 30pt;
+    margin-bottom: -20px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 16pt;
+    margin-bottom: -15px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: -12px;
+}
+
+/* info section */
+
+.info {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    width: auto;
+    background-color: #F6ECE0;
+    padding: 40px 100px 40px 100px;
+    box-shadow: -10px 10px 15px #00000039;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px 500px; 
+    gap: 0px 80px;    
+    padding: 0;
+}
+
+.grid-item {
+    display: flex;  
+    align-items: flex-start;  
+    gap: 11px;  
+    padding: 0;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+/* popular hot sauces */
+
+.hot-sauces {
+    background-image: url(../images/pepperbackdrop.jpg);
+    background-size: cover;
+    padding: 150px 0 150px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sauce-list {
+    width: auto;
+    background-color: #F6ECE0;
+    padding: 40px 20px 40px 20px;
+}
+
+.sauce {
+    display: flex;
+    grid-template-columns: 300px; 
+    gap: 40px;    
+    padding: 0;
+    align-items: center;
+}
+
+.sauce img {
+    width: 250px;
+}
+
+.sauce .pepper-icon {
+    width: 10px;
+    position: absolute;
+    /* top: 1px; */
+    left: 970px;
+    z-index: 1;
+}
+
+.sauce .pepper-icon2 {
+    width: 10px;
+    position: absolute;
+    /* top: 1px; */
+    left: 988px;
+    z-index: 1;
+}
+
+.sauce-info {
+    /* position: relative; */
+    max-width: 250px;
+    padding-right: 40px;
+}
+
+.sauce-info h4 {
+    padding-bottom: 12px;
+}
+
+.sauce .sriracha {
+    scale: 80%;
+}
+
+.sauce .harissa {
+    scale: 80%;
+}
+
+/* tips */
+
+.managing {
+    display: grid;
+    grid-template-columns: 650px 650px; 
+    gap: 0px 100px;    
+    padding: 40px 40px 40px 40px;
+}
+
+.tips {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    max-width: 500px;
+}
+
+.tips ol {
+    font-weight: 500;
+    font-size: 18pt;
+    padding: 0;
+}
+
+.tips h2 {
+    line-height: 80px;
+    display: flex;
+}
+
+.tips p{
+    display: flex;
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+/* recipe ideas */
+
+.recipe-ideas {
+    position: relative;
+    background-color: rgb(164, 34, 34);
+}
+
+.recipe-ideas h2 {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.recipe-name h3 {
+    font-family: manofa;
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+.recipe-name {
+    position: absolute;
+    left: 540px;
+    z-index: 1;
+}
+
+.recipe-image {
+    width: 60%;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 180px;
+}
+
+.recipe-ideas img {
+    width: 500px;
+    /* padding: 0 150px 0 120px; */
+}
+
+.recipe-ideas .forward-arrow {
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 960px;
+}
+
+.recipe-ideas .back-arrow {
+    rotate: 180deg;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 520px;
+}
+
+.image1 {
+    position: absolute;
+}
+
+.image2 {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+/* footer */
+
+footer {
+    padding: 30px 0 54px 44px;
+}
+
+footer p {
+    color: rgb(164, 34, 34);
+}
