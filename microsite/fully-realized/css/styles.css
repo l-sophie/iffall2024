@@ -1,0 +1,318 @@
+html {
+    font-family: "futura-pt-condensed", sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    background-color: #F6ECE0;
+}
+
+h1 {
+    font-family: "swear-display", serif;
+    font-size: 100pt;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 120px;
+    text-align: center;
+    color: rgb(164, 34, 34);
+}
+
+h2 {
+    font-family: "swear-display", serif;
+    font-size: 30pt;
+}
+
+h3 {
+    font-size: 30pt;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20pt;
+    margin-bottom: -15px;
+    font-weight: 500;
+}
+
+
+
+
+/* header */
+
+header {
+    background-image: url(../images/plantbackdrop.jpeg);
+    background-size: cover;
+    padding: 60px 0 120px 0;
+}
+
+@media (min-width: 1166px) {
+    h1 {font-size: 12rem; line-height: 10rem; padding-bottom: 40px;}
+}
+
+
+
+
+/* general information */
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.floating-box {
+    max-width: 80%;
+    background-color: #F6ECE0;
+    box-shadow: -10px 10px 15px #00000039;
+}
+
+.floating-box ul {
+    list-style-type: none;
+    padding: 40px 0 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.floating-box li {
+    margin: 0 80px 0 80px;
+}
+
+.info-grid {
+    justify-content: center;
+}
+
+.info-grid-item h3 {
+    margin-bottom: -20px;
+}
+
+.info-grid-item h4 {
+    margin-bottom: 4px;
+}
+
+.info-grid-item aside {
+    max-width: 300px;
+}
+
+@media (max-width: 1166px) {
+    .floating-box {max-width: 80%;}
+    .floating-box ul {padding: 0.5rem; padding-bottom: 60px;}
+}
+
+
+
+
+/* popular hot sauces */
+
+.hot-sauces {
+    background-image: url(../images/pepperbackdrop.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.sauce-list ul {
+    list-style-type: none;
+    /* padding: 40px 0 80px 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.sauce-list h2 {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-top: 60px;
+}
+
+.receipt {
+    width: 230%;
+    position: absolute;
+    z-index: 1;
+}
+
+.sauce-grid-item {
+    max-width: 200px;
+    padding: 20px;
+}
+
+.sauce-grid-item .tobasco {
+    width: 180px;
+}
+
+.sauce-grid-item .sriracha {
+    width: 150px;
+    padding-top: 10px;
+}
+
+.sauce-grid-item .wasabi {
+    width: 150px;
+    padding-top: 30px;
+}
+
+.sauce-grid-item .harissa {
+    width: 140px;
+    padding-top: 20px;
+}
+
+.sauce-grid-item .pepper-icon {
+    width: 10px;
+}
+
+.sauce-grid-item .pepper-icon2 {
+    width: 10px;
+}
+
+@media (max-width: 720px) {
+    .receipt {width: 570%;}
+    .sauce-list h2 {padding-top: 6rem;}
+}
+
+@media (min-width: 721px) {
+    .sauce-list h2 {font-size: 1.15rem; padding-top: 4rem;}
+}
+
+@media (min-width: 1150px) {
+    .sauce-list h2 {font-size: 1.8rem; padding-top: 6rem;}
+}
+
+@media (min-width: 664px) {
+    .sauce-grid-item {max-width: 280px;}
+}
+
+@media (max-width: 720px) {
+    .sauce-grid {gap: 20px; margin-left: -50px;}
+    .sauce-grid-item {max-width: 180px; font-size: .8rem; padding: 0;}
+}
+
+@media (min-width: 721px) {
+    .sauce-grid-item {max-width: 120px; font-size: .8rem; padding-right: 0;}
+    .sauce-grid-item h4 {font-size: 1.25rem;}
+    .sauce-grid-item .tobasco {width: 6.5rem; padding-top: 4rem;}
+    .sauce-grid-item .sriracha {width: 5rem; padding-top: 4.5rem;}
+    .sauce-grid-item .wasabi {width: 5rem; padding-top: 5rem;}
+    .sauce-grid-item .harissa {width: 4rem; padding-top: 5.5rem;}
+}
+
+
+
+
+/* recipe ideas */
+
+#recipe-ideas {
+    width: 38%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    padding-top: 20px;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+
+#recipe-ideas h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.recipe {
+    float: left;
+    width: 580px;
+    height: 580px;
+}
+
+.recipe img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe-slides {
+    width: calc(1032px  * 4);
+    animation: slide 15s ease infinite;
+}
+
+@keyframes slide {
+    0%, 100% {margin-left: 0px;}
+    25% {margin-left: calc(-580px * 1);}
+    50% {margin-left: calc(-580px * 2);}
+    75% {margin-left: calc(-580px * 3);}
+}
+
+@media (max-width: 1250px) {
+    #recipe-ideas {width: 20rem;}
+    .recipe {width: 20rem; height: 20rem;}
+    .recipe img {width: 20rem;}
+    @keyframes slide {0%, 100% {margin-left: 0px;}
+        25% {margin-left: calc(-20rem * 1);}
+        50% {margin-left: calc(-20rem * 2);}
+        75% {margin-left: calc(-20rem * 3);}}
+}
+
+
+
+
+/* spicy food tips */
+
+.managing-box {
+    background-color: rgb(164, 34, 34);
+}
+
+.managing-box h2{
+    padding-top: 60px;
+    font-size: 38pt;
+    color: #F6ECE0;
+    text-align: center;
+}
+
+.managing-box ul {
+    list-style-type: none;
+    padding: 40px 0 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.managing-box li {
+    margin: 0 40px 0 40px;
+}
+
+.tip-grid {
+    justify-content: center;
+}
+
+.tip-grid-item ol {
+    color: #F6ECE0;
+}
+
+.tip-grid-item aside {
+    max-width: 500px;
+}
+
+.tip-grid-item h4 {
+    color: #F6ECE0;
+}
+
+.tip-grid-item p {
+    color: #F6ECE0;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+@media (max-width: 960px) {
+    .managing-box h2 {padding-top: 1rem;}
+}
+
+
+/* footer */
+
+footer {
+    padding: 15px 0 30px 28px;
+}
+
+footer p {
+    color: rgb(164, 34, 34);
+}
+
+@media (max-width: 720px) {
+    footer {padding: 1rem 0 1rem 1rem;}
+}
